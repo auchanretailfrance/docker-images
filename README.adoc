@@ -1,0 +1,42 @@
+= Auchan Retail France OSS docker images
+
+== PostgreSQL + pg_auto_failover
+
+This image is based on link:https://hub.docker.com/_/postgres[PostgreSQL Docker official image] and adds link:https://github.com/citusdata/pg_auto_failover#readme[pg_auto_failover].
+
+It has been built as a component of link:https://github.com/auchanretailfrance/helm-charts/tree/master/charts/pg-auto-failover[pg-auto-failover Helm chart] but does not contains any kubernetes specific stuff.
+
+=== Supported versions
+
+
+[cols=3*]
+|===
+|Postgresql version
+|pg_auto_failover version
+|image tags
+
+|11.9
+|1.3
+a|
+* 11-1.3 
+* 11.9-1.3
+
+|11.9
+|1.4
+a|
+* 11-1.4
+* 11.9-1.4
+
+|12.4
+|1.3
+a|
+* 12-1.4
+* 12.4-1.4
+
+|12.4
+|1.4
+a|
+* 12-1.4
+* 12.4-1.4
+|===
+
